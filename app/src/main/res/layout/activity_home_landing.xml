@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homeLandingActivity">
+
+
+    <ImageView
+        android:id="@+id/buttonFullBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/fullbalancebutton2" />
+
+    <ImageView
+        android:id="@+id/buttonImgMyNursery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonImgMyTask"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mynurserybutton" />
+
+
+    <!--    <Button
+        android:id="@+id/buttonWalletTotal"
+        android:layout_width="360dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="25dp"
+        android:text="Get Started"
+        app:backgroundTint="#6D8BC34A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <ImageView
+        android:id="@+id/buttonImgMyTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mytaskbutton" />
+
+    <ImageView
+        android:id="@+id/buttonImgEarnMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFullBalance"
+        app:srcCompat="@drawable/earnmorebutton" />
+
+    <TextView
+        android:id="@+id/testMyWallet"
+        android:layout_width="153dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="My Wallet"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFullBalance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/textMySavings"
+        android:layout_width="153dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="5dp"
+        android:text="My Savings"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonImgMyNursery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:textAllCaps="false" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/userbackground2" />
+
+    <TextView
+        android:id="@+id/textUserName"
+        android:layout_width="178dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="Sammy Williams"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textWalletTotal"
+        android:layout_width="168dp"
+        android:layout_height="40dp"
+        android:text="24.76"
+        android:textSize="31dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFullBalance"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFullBalance"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/buttonFullBalance"
+        app:layout_constraintTop_toTopOf="@+id/buttonFullBalance"
+        app:layout_constraintVertical_bias="0.366" />
+
+    <TextView
+        android:id="@+id/textWalletNote"
+        android:layout_width="278dp"
+        android:layout_height="16dp"
+        android:gravity="center"
+        android:text="You have 12.45 more bucks to spend today."
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFullBalance"
+        app:layout_constraintEnd_toEndOf="@+id/buttonFullBalance"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="@+id/buttonFullBalance"
+        app:layout_constraintTop_toTopOf="@+id/buttonFullBalance"
+        app:layout_constraintVertical_bias="0.645" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
